@@ -12,6 +12,8 @@
             scrollTop: $("#quick_intro").offset().top
         }, 1000);
     });
+    // for resize of text area
+    $('#textarea1').trigger('autoresize');
 
   }); // end of document ready
 })(jQuery); // end of jQuery name space
