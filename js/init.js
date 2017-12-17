@@ -15,5 +15,13 @@
     // for resize of text area
     $('#textarea1').trigger('autoresize');
 
+    var hash = window.location.hash;
+    if($(hash).length)
+    {
+      $('html, body').animate({
+           scrollTop: $(hash).offset().top
+       }, 1000);
+    }
+
   }); // end of document ready
 })(jQuery); // end of jQuery name space
