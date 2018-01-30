@@ -77,7 +77,7 @@
       var g_yemail = $("#g_yemail").val();
       var g_tele = $("#g_tele").val();
       var g_sub = $("#g_sub").val();
-      var g_msg = $("g_msg").val();
+      var g_msg = $("#g_msg").val();
       $("#new_msg_div").html('<p class="center-align">We are uploading your details, please wait.</p><div class="progress"><div class="indeterminate"></div></div>');
       $.ajax({
         url: "https://mandrillapp.com/api/1.0/messages/send.json",
